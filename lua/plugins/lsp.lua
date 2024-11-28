@@ -6,19 +6,21 @@ return {
         biome = {
           offset_encoding = "utf-16",
         },
-        vtsls = {
-          keys = {
-            {
-              "<leader>cp",
-              function()
-                LazyVim.lsp.action["source.addMissingImports.ts"]()
-                LazyVim.lsp.action["source.fixAll.ts"]()
-                LazyVim.format({ force = true })
-              end,
-              desc = "Fix everything",
-            },
-          },
-        },
+        -- vtsls = {
+        --   keys = {
+        --     {
+        --       "<leader>cp",
+        --       function()
+        --         LazyVim.lsp.action["source.addMissingImports.ts"](function()
+        --           LazyVim.format({ force = true })
+        --         end)
+        --         -- LazyVim.lsp.action["source.fixAll.ts"]()
+        --         -- LazyVim.format({ force = true })
+        --       end,
+        --       desc = "Fix everything",
+        --     },
+        --   },
+        -- },
       },
     },
   },
