@@ -6,3 +6,4 @@ vim.g.autoformat = false
 vim.g.root_spec = { { ".git", "lua" }, "cwd" }
 
 vim.opt.spell = true
+vim.opt.guicursor = "n:blinkon1"
